@@ -5,61 +5,97 @@
   <title>TechNova</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+  <script src="js/main.js"></script>
 </head>
-<body>
+<body data-page="contact">
+  <div id="particles-js"></div>
+
+
   <header>
     <nav>
       <div class="logo">
         <a href="index.html">TechNova</a>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a id="a1" href="index.html">Home</a></li>
+        <li><a id="a2" href="about.html">About Us</a></li>
+        <li><a id="a3" href="services.html">Services</a></li>
+        <li><a id="a4" class="active" href="contact.html">Contact Us</a></li>
+        <li><a id="a5" href="faq.html">FAQ</a></li>
+        <li>
+          <button id="theme-toggle-btn">Light Mode</button>
+        </li>
+        <li>
+          <div class="language-selector">
+            <label for="language-selector"></label>
+            <select id="language-selector">
+              <option value="en" selected>English</option>
+              <option value="ru">Русский</option>
+            </select>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="contact">
-      <h1>Contact Us</h1>
-      <p>We'd love to hear from you! Please fill out the form below or reach us using the contact information provided.</p>
+      <h1 id="text1">Contact Us</h1>
+      <p id="text2">We'd love to hear from you! Please fill out the form below or reach us using the contact information provided.</p>
       <div class="contact-info">
-        <h2>Our Office</h2>
+        <h2 id="text3">Our Office</h2>
         <p>123 TechNova Way<br>
           San Francisco, CA 94107<br>
           United States</p>
-        <h2>Email</h2>
+        <h2 id="text4">Email</h2>
         <p><a href="mailto:contact@technova.com">contact@technova.com</a></p>
-        <h2>Phone</h2>
+        <h2 id="text5">Phone</h2>
         <p>+1 (555) 123-4567</p>
       </div>
       <form action="#" method="post">
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label id="text6" for="name">Name:</label>
           <input type="text" id="name" name="name" required placeholder="Your Name">
         </div>
         <div class="form-group">
-          <label for="email">Email:</label>
+          <label id="text7" for="email">Email:</label>
           <input type="email" id="email" name="email" required placeholder="Your Email">
         </div>
         <div class="form-group">
-          <label for="subject">Subject:</label>
+          <label id="text8" for="subject">Subject:</label>
           <input type="text" id="subject" name="subject" required placeholder="Subject">
         </div>
         <div class="form-group">
-          <label for="message">Message:</label>
+          <label id="text9" for="message">Message:</label>
           <textarea id="message" name="message" rows="6" required placeholder="Your Message"></textarea>
         </div>
-        <button type="submit" class="btn">Send Message</button>
+        <button id="text10" type="submit" class="btn">Send Message</button>
       </form>
     </section>
+
+    <button id="scroll-up-btn" title="Go to top">⮝</button>
   </main>
 
   <footer>
     <p>&copy; 2024 TechNova. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/icons8-facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/icons8-twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/icons8-instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
   </footer>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
 </body>
 </html>

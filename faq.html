@@ -5,59 +5,94 @@
   <title>TechNova</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+  <script src="js/main.js"></script>
 </head>
-<body>
+<body data-page="faq">
+  <div id="particles-js"></div>
+
   <header>
     <nav>
       <div class="logo">
         <a href="index.html">TechNova</a>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a id="a1" href="index.html">Home</a></li>
+        <li><a id="a2" href="about.html">About Us</a></li>
+        <li><a id="a3" href="services.html">Services</a></li>
+        <li><a id="a4" href="contact.html">Contact Us</a></li>
+        <li><a id="a5" class="active" href="faq.html">FAQ</a></li>
+        <li>
+          <button id="theme-toggle-btn">Light Mode</button>
+        </li>
+        <li>
+          <div class="language-selector">
+            <label for="language-selector"></label>
+            <select id="language-selector">
+              <option value="en" selected>English</option>
+              <option value="ru">Русский</option>
+            </select>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="faq">
-      <h1>Frequently Asked Questions</h1>
+      <h1 id="text1">Frequently Asked Questions</h1>
       <div class="faq-item">
-        <h2>What services does TechNova offer?</h2>
-        <p>We offer a range of services including software development, AI solutions, data analytics, and cloud computing.</p>
+        <h2 id="text2">What services does TechNova offer?</h2>
+        <p id="text3">We offer a range of services including software development, AI solutions, data analytics, and cloud computing.</p>
       </div>
       <div class="faq-item">
-        <h2>How can I contact TechNova?</h2>
-        <p>You can reach us via the contact form on our <a href="contact.html">Contact Us</a> page or email us at contact@technova.com.</p>
+        <h2 id="text4">How can I contact TechNova?</h2>
+        <p id="text5">You can reach us via the contact form on our <a href="contact.html">Contact Us</a> page or email us at contact@technova.com.</p>
       </div>
       <div class="faq-item">
-        <h2>Where is TechNova located?</h2>
-        <p>Our headquarters are located in San Francisco, CA, with offices worldwide.</p>
+        <h2 id="text6">Where is TechNova located?</h2>
+        <p id="text7">Our headquarters are located in San Francisco, CA, with offices worldwide.</p>
       </div>
       <div class="faq-item">
-        <h2>Do you provide customized solutions?</h2>
-        <p>Yes, we tailor our solutions to meet the specific needs of each client.</p>
+        <h2 id="text8">Do you provide customized solutions?</h2>
+        <p id="text9">Yes, we tailor our solutions to meet the specific needs of each client.</p>
       </div>
       <div class="faq-item">
-        <h2>What industries do you serve?</h2>
-        <p>We serve a wide range of industries including finance, healthcare, retail, and manufacturing.</p>
+        <h2 id="text10">What industries do you serve?</h2>
+        <p id="text11">We serve a wide range of industries including finance, healthcare, retail, and manufacturing.</p>
       </div>
       <div class="faq-item">
-        <h2>How long does a typical project take?</h2>
-        <p>The duration varies depending on the project scope. We work closely with clients to establish timelines that meet their needs.</p>
+        <h2 id="text12">How long does a typical project take?</h2>
+        <p id="text13">The duration varies depending on the project scope. We work closely with clients to establish timelines that meet their needs.</p>
       </div>
       <div class="faq-item">
-        <h2>Do you offer post-implementation support?</h2>
-        <p>Yes, we provide ongoing support and maintenance services.</p>
+        <h2 id="text14">Do you offer post-implementation support?</h2>
+        <p id="text15">Yes, we provide ongoing support and maintenance services.</p>
       </div>
     </section>
+
+    <button id="scroll-up-btn" title="Go to top">⮝</button>
   </main>
 
   <footer>
     <p>&copy; 2024 TechNova. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/icons8-facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/icons8-twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/icons8-instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
   </footer>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
 </body>
 </html>

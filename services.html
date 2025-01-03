@@ -5,59 +5,95 @@
   <title>TechNova</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+  <script src="js/main.js"></script>
 </head>
-<body>
+<body data-page="services">
+  <div id="particles-js"></div>
+
+
   <header>
     <nav>
       <div class="logo">
         <a href="index.html">TechNova</a>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a id="a1" href="index.html">Home</a></li>
+        <li><a id="a2" href="about.html">About Us</a></li>
+        <li><a id="a3" class="active" href="services.html">Services</a></li>
+        <li><a id="a4" href="contact.html">Contact Us</a></li>
+        <li><a id="a5" href="faq.html">FAQ</a></li>
+        <li>
+          <button id="theme-toggle-btn">Light Mode</button>
+        </li>
+        <li>
+          <div class="language-selector">
+            <label for="language-selector"></label>
+            <select id="language-selector">
+              <option value="en" selected>English</option>
+              <option value="ru">Русский</option>
+            </select>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="services">
-      <h1>Our Services</h1>
-      <p>We offer a comprehensive suite of services designed to meet the diverse needs of our clients.</p>
+      <h1 id="text1">Our Services</h1>
+      <p id="text2">We offer a comprehensive suite of services designed to meet the diverse needs of our clients.</p>
       <div class="service-list">
         <div class="service-item">
           <img src="images/software-development.jpg" alt="Software Development">
-          <h2>Software Development</h2>
-          <p>Custom software solutions tailored to your business needs, using the latest technologies and best practices.</p>
+          <h2 id="text3">Software Development</h2>
+          <p id="text4">Custom software solutions tailored to your business needs, using the latest technologies and best practices.</p>
         </div>
         <div class="service-item">
           <img src="images/artificial-intelligence.jpg" alt="Artificial Intelligence">
-          <h2>Artificial Intelligence</h2>
-          <p>Implement AI to automate processes, enhance decision-making, and gain valuable insights.</p>
+          <h2 id="text5">Artificial Intelligence</h2>
+          <p id="text6">Implement AI to automate processes, enhance decision-making, and gain valuable insights.</p>
         </div>
         <div class="service-item">
           <img src="images/data-analytics.jpg" alt="Data Analytics">
-          <h2>Data Analytics</h2>
-          <p>Unlock the power of data with our analytics services, helping you make data-driven decisions.</p>
+          <h2 id="text7">Data Analytics</h2>
+          <p id="text8">Unlock the power of data with our analytics services, helping you make data-driven decisions.</p>
         </div>
         <div class="service-item">
           <img src="images/cloud-computing.jpg" alt="Cloud Computing">
-          <h2>Cloud Computing</h2>
-          <p>Scalable cloud solutions for growing businesses, ensuring flexibility and security.</p>
+          <h2 id="text9">Cloud Computing</h2>
+          <p id="text10">Scalable cloud solutions for growing businesses, ensuring flexibility and security.</p>
         </div>
       </div>
 
-      <h2>Consulting Services</h2>
-      <p>Our experts provide strategic consulting to help you navigate the complexities of technology adoption.</p>
-      <h2>Support and Maintenance</h2>
-      <p>We offer ongoing support and maintenance services to ensure your technology solutions remain up-to-date and effective.</p>
+      <h2 id="text11">Consulting Services</h2>
+      <p id="text12">Our experts provide strategic consulting to help you navigate the complexities of technology adoption.</p>
+      <h2 id="text13">Support and Maintenance</h2>
+      <p id="text14">We offer ongoing support and maintenance services to ensure your technology solutions remain up-to-date and effective.</p>
     </section>
+
+    <button id="scroll-up-btn" title="Go to top">⮝</button>
   </main>
 
   <footer>
     <p>&copy; 2024 TechNova. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/icons8-facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/icons8-twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/icons8-instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
   </footer>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
 </body>
 </html>

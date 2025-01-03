@@ -5,53 +5,104 @@
 	<title>TechNova</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/images/icon.ico">
+	<script src="js/main.js"></script>
 </head>
-<body>
-	<header>
-		<nav>
-			<div class="logo">
-				<a href="index.html">TechNova</a>
-			</div>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-			</ul>
-		</nav>
-	</header>
+<body data-page="home">
+	<div id="particles-js"></div>
 
-	<main>
-		<section class="hero">
-			<div class="hero-text">
-				<h1>Innovating the Future</h1>
-				<p>At TechNova, we build cutting-edge technology solutions that drive businesses forward.</p>
-				<a href="services.html" class="btn">Explore Our Services</a>
-			</div>
-			<div class="hero-image">
-				<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Innovative Technology">
-			</div>
-		</section>
+		<header>
+			<nav>
+				<div class="logo">
+					<a href="index.html">TechNova</a>
+				</div>
+				<ul class="nav-links">
+					<li><a id="a1" class="active" href="index.html">Home</a></li>
+					<li><a id="a2" href="about.html">About Us</a></li>
+					<li><a id="a3" href="services.html">Services</a></li>
+					<li><a id="a4" href="contact.html">Contact Us</a></li>
+					<li><a id="a5" href="faq.html">FAQ</a></li>
+					<li>
+						<button id="theme-toggle-btn">Light Mode</button>
+					</li>
+					<li>
+						<div class="language-selector">
+							<label for="language-selector"></label>
+							<select id="language-selector">
+								<option value="en" selected>English</option>
+								<option value="ru">Русский</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-		<section class="more-content">
-			<h2>Why Choose TechNova?</h2>
-			<p>We are a team of passionate innovators committed to delivering excellence in every project we undertake.</p>
-			<p>Our expertise spans across multiple domains, including software development, artificial intelligence, data analytics, and cloud computing.</p>
-			<p>We collaborate closely with our clients to understand their unique challenges and tailor solutions that meet their specific needs.</p>
-			<p>At TechNova, we believe in continuous learning and staying ahead of industry trends to provide cutting-edge solutions.</p>
-			<h2>Our Achievements</h2>
-			<ul>
-				<li>Over 500 successful projects delivered</li>
-				<li>A global client base across 20+ countries</li>
-				<li>Awarded "Tech Company of the Year" for three consecutive years</li>
-			</ul>
-			<p>Join us on this journey of innovation and let us help you transform your business.</p>
-		</section>
-	</main>
+		<main>
+			<section class="hero">
+				<div class="hero-text">
+					<h1 id="text1">Innovating the Future</h1>
+					<p id="text2">At TechNova, we build cutting-edge technology solutions that drive businesses forward.</p>
+					<a id="text3" href="services.html" data-url="services.html" class="ajax-link btn">Explore Our Services</a>
+					<div id="tooltip" class="hidden"></div>
+				</div>
 
-	<footer>
-		<p>&copy; 2024 TechNova. All rights reserved.</p>
-	</footer>
+				<div class="slider-container">
+					<div class="slides fade">
+						<img src="images/iStock-1383963898.jpg" alt="Innovative Technology">
+					</div>
+					<div class="slides fade">
+						<img src="images/How-Tech-is-Changing-the-Way-we-Work.jpg" alt="Innovative Technology">
+					</div>
+					<div class="slides fade">
+						<img src="images/technology-illustration-hd.jpg" alt="Innovative Technology">
+					</div>
+					<button class="slider-button" id="slider-left" onclick="changeSlide(-1)"> < </button>
+					<button class="slider-button" id="slider-right" onclick="changeSlide(1)"> > </button>
+					<span class="dot active-dot" onclick="currentSlide(0)"></span>
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+				</div>
+			</section>
+
+			<section class="more-content">
+				<h2 id="text4">Why Choose TechNova?</h2>
+				<p id="text5">We are a team of passionate innovators committed to delivering excellence in every project we undertake.</p>
+				<p id="text6">Our expertise spans across multiple domains, including software development, artificial intelligence, data analytics, and cloud computing.</p>
+				<p id="text7">We collaborate closely with our clients to understand their unique challenges and tailor solutions that meet their specific needs.</p>
+				<p id="text8">At TechNova, we believe in continuous learning and staying ahead of industry trends to provide cutting-edge solutions.</p>
+				<h2 id="text9">Our Achievements</h2>
+				<ul>
+					<li id="text10">Over 500 successful projects delivered</li>
+					<li id="text11">A global client base across 20+ countries</li>
+					<li id="text12">Awarded "Tech Company of the Year" for three consecutive years</li>
+				</ul>
+				<p id="text13">Join us on this journey of innovation and let us help you transform your business.</p>
+			</section>
+
+			<button id="scroll-up-btn" title="Go to top">⮝</button>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 TechNova. All rights reserved.</p>
+			<div class="social-icons">
+				<a href="https://facebook.com" target="_blank" aria-label="Facebook">
+					<img src="images/icons8-facebook.svg" alt="Facebook">
+				</a>
+				<a href="https://twitter.com" target="_blank" aria-label="Twitter">
+					<img src="images/icons8-twitter.svg" alt="Twitter">
+				</a>
+				<a href="https://instagram.com" target="_blank" aria-label="Instagram">
+					<img src="images/icons8-instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+					<img src="images/icons8-linkedin.svg" alt="LinkedIn">
+				</a>
+			</div>
+		</footer>
+
+
+	<script src="js/particles.min.js"></script>
+	<script src="js/particles-config.js"></script>
 </body>
 </html>

@@ -5,49 +5,85 @@
   <title>TechNova</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/icon.ico">
 </head>
-<body>
+<body data-page="about">
+  <div id="particles-js"></div>
+
   <header>
     <nav>
       <div class="logo">
         <a href="index.html">TechNova</a>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a id="a1" href="index.html">Home</a></li>
+        <li><a id="a2" class="active" href="about.html">About Us</a></li>
+        <li><a id="a3" href="services.html">Services</a></li>
+        <li><a id="a4" href="contact.html">Contact Us</a></li>
+        <li><a id="a5" href="faq.html">FAQ</a></li>
+        <li>
+          <button id="theme-toggle-btn">Light Mode</button>
+        </li>
+        <li>
+          <div class="language-selector">
+            <label for="language-selector"></label>
+            <select id="language-selector">
+              <option value="en" selected>English</option>
+              <option value="ru">Русский</option>
+            </select>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="content">
-      <h1>About TechNova</h1>
-      <p>TechNova was founded in 2010 with a mission to revolutionize the tech industry. Over the past decade, we have grown into a global leader in technological innovation.</p>
-      <h2>Our Mission</h2>
-      <p>To empower businesses with state-of-the-art technology solutions that enhance productivity and drive growth.</p>
-      <h2>Our Vision</h2>
-      <p>To be at the forefront of technological advancements, shaping the future through innovation.</p>
-      <h2>Our Values</h2>
+      <h1 id="text1">About TechNova</h1>
+      <p id="text2">TechNova was founded in 2010 with a mission to revolutionize the tech industry. Over the past decade, we have grown into a global leader in technological innovation.</p>
+      <h2 id="text3">Our Mission</h2>
+      <p id="text4">To empower businesses with state-of-the-art technology solutions that enhance productivity and drive growth.</p>
+      <h2 id="text5">Our Vision</h2>
+      <p id="text6">To be at the forefront of technological advancements, shaping the future through innovation.</p>
+      <h2 id="text7">Our Values</h2>
       <ul>
-        <li><strong>Innovation:</strong> We foster a culture of creativity and continuous improvement.</li>
-        <li><strong>Integrity:</strong> We conduct our business with the highest ethical standards.</li>
-        <li><strong>Collaboration:</strong> We believe in the power of teamwork to achieve extraordinary results.</li>
-        <li><strong>Customer Focus:</strong> We are dedicated to exceeding our clients' expectations.</li>
+        <li id="text8">Innovation: We foster a culture of creativity and continuous improvement.</li>
+        <li id="text9">Integrity: We conduct our business with the highest ethical standards.</li>
+        <li id="text10">Collaboration: We believe in the power of teamwork to achieve extraordinary results.</li>
+        <li id="text11">Customer Focus: We are dedicated to exceeding our clients' expectations.</li>
       </ul>
-      <h2>Our Team</h2>
-      <p>Our team comprises industry experts with years of experience in software development, AI, and data analytics. We are passionate about technology and committed to delivering excellence.</p>
+      <h2 id="text12">Our Team</h2>
+      <p id="text13">Our team comprises industry experts with years of experience in software development, AI, and data analytics. We are passionate about technology and committed to delivering excellence.</p>
       <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Our Team">
-      <h2>Our Journey</h2>
-      <p>From humble beginnings, TechNova has expanded its operations across the globe, establishing offices in key technology hubs. Our journey is marked by milestones of innovation, customer satisfaction, and industry recognition.</p>
-      <p>We are excited about the future and look forward to continuing our mission to innovate and inspire.</p>
+      <h2 id="text14">Our Journey</h2>
+      <p id="text15">From humble beginnings, TechNova has expanded its operations across the globe, establishing offices in key technology hubs. Our journey is marked by milestones of innovation, customer satisfaction, and industry recognition.</p>
+      <p id="text16">We are excited about the future and look forward to continuing our mission to innovate and inspire.</p>
     </section>
+
+    <button id="scroll-up-btn" title="Go to top">⮝</button>
   </main>
 
   <footer>
     <p>&copy; 2024 TechNova. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/icons8-facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/icons8-twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/icons8-instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
   </footer>
+
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
 </body>
 </html>
